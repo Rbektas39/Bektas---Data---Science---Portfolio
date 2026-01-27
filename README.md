@@ -15,12 +15,29 @@ I’m an Economics student with a strong interest in data science, sustainabilit
 ---
 
 ## 🚀 Featured Projects
-Here are a few projects that showcase my work in data analysis and visualization:
-- **[Project Title]** – Brief description of the problem, methods used, and key insights  
-- **[Project Title]** – Focus on modeling, forecasting, or applied data science  
-- **[Project Title]** – Visualization or dashboard-based project  
+# Generative AI Sustainability Index
 
-*(Each project repository includes a clear README with context, methods, and results.)*
+**Course:** Generative AI  
+**Tools:** Python, LLM evaluation, prompt engineering  
+
+This project examines the environmental and sustainability implications of large language models. It proposes a framework for comparing different model types based on efficiency, scale, and sustainability considerations that are typically hidden from end users.
+
+The project compares frontier, reasoning-oriented, and smaller open-source models to highlight tradeoffs between performance and environmental cost.
+
+📄 **Project Presentation:**  
+[View Presentation](./Gen-AI-Final-Project-Presentation.pptx)
+
+# Economic Shocks and Civil Rebellion (Agent-Based Model)
+
+**Course:** Simulating Politics and Global Affairs  
+**Tools:** NetLogo, agent-based modeling, BehaviorSpace  
+
+This project extends Epstein’s (2002) civil violence model by introducing time-varying economic hardship through regular economic shocks. The model examines how shock magnitude and frequency influence rebellion intensity and volatility.
+
+Using BehaviorSpace experiments, the project shows that economic instability, rather than static hardship alone, plays a key role in generating extreme rebellion events.
+
+📄 **Full Write-Up:**  
+[Read Final Paper](./Final-Writeup-Simulating-Politics-and-Global-Affairs.docx)
 
 ---
 
