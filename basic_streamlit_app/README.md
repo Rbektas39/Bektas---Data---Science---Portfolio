@@ -13,3 +13,27 @@ I’m an Economics student with a strong interest in data science, sustainabilit
 ---
 
 ## 📂 Repository Structure
+ach project folder contains its own README with details on purpose, data, and usage.
+
+---
+
+## 🐧 Project: Penguin Explorer (Streamlit App)
+
+The Penguin Explorer is a basic Streamlit application built as part of this course. It uses the Palmer Penguins dataset to demonstrate interactive data exploration.
+
+### Features
+- Loads data from a CSV file
+- Displays a pandas DataFrame
+- Interactive filters for:
+  - Species
+  - Island
+  - Sex
+  - Body mass range
+- Summary statistics for numeric variables
+
+### How to Run the App
+
+From the root of this repository, run:
+
+```bash
+streamlit run basic_streamlit_app/main.py
