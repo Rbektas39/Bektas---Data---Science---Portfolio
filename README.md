@@ -39,6 +39,20 @@ Using BehaviorSpace experiments, the project shows that economic instability, ra
 📄 **Full Write-Up:**  
 [Read Final Paper](./Final-Writeup-Simulating-Politics-and-Global-Affairs.docx)
 
+# Tidy Data Transformation and Exploratory Analysis (Python)
+
+**Course:** Introduction to Data Science  
+**Tools:** Python, pandas, matplotlib  
+
+This project applies tidy data principles to transform a messy real-world dataset of 2008 Olympic medalists into a structured format suitable for analysis. The original dataset stored multiple variables (sport and gender) within column names, requiring reshaping from wide to long format.
+
+Using pandas functions such as `melt()`, string parsing methods, and pivot table aggregation, the project constructs a tidy dataset where each row represents a single medal observation. The cleaned data is then used to explore patterns in medal distributions across sports and gender through summary statistics and visualizations.
+
+This project demonstrates practical data wrangling skills, including restructuring datasets, handling missing observations, and performing exploratory data analysis — core competencies for applied data science work.
+
+📄 **Project Repository:**  
+https://github.com/Rbektas39/TidyData-Project
+
 ---
 
 ## 🛠️ Technical Skills
