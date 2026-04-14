@@ -30,3 +30,4 @@ After cleaning, the tidy dataset was used to:
 
 - Pandas Cheat Sheet: https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf  
 - Wickham, H. (2014). Tidy Data. Journal of Statistical Software.
+
