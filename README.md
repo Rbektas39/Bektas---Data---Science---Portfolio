@@ -14,6 +14,42 @@ I’m an Economics student with a strong interest in data science, sustainabilit
 
 ---
 
+## Machine Learning Application: Energy Efficiency Explorer
+
+As part of my data science portfolio, I developed an interactive machine learning application using Streamlit that predicts building energy demand based on structural characteristics.
+
+🔗 Project Repository:  
+https://github.com/Rbektas39/MLStreamlitApp  
+
+🔗 Live Application:  
+https://energy-efficiency-ml-explorer.streamlit.app/
+
+### Overview
+
+This application allows users to explore how building design features influence energy consumption by training and comparing multiple regression models, including Linear Regression, Decision Trees, and Random Forests. Users can adjust model parameters, evaluate performance using metrics such as R², MAE, and RMSE, and visualize results through diagnostic plots.
+
+The project builds on my understanding of supervised machine learning by moving beyond static analysis to an interactive environment where model behavior can be explored dynamically.
+
+### Contribution to Portfolio
+
+This project demonstrates several key skills:
+
+- Building interactive data applications using Python and Streamlit  
+- Applying machine learning workflows including model selection, evaluation, and hyperparameter tuning  
+- Deploying a live application using Streamlit Community Cloud  
+- Designing user-friendly interfaces for exploring data and model results  
+
+Compared to earlier projects in my portfolio, which focused more on data analysis and visualization, this application highlights my ability to take models to deployment and create tools that others can interact with directly.
+
+### Connection to Previous Work
+
+This project builds on previous portfolio work:
+
+- Earlier projects focused on data exploration, visualization, and foundational modeling  
+- This application extends those skills into a full end-to-end workflow, combining analysis, modeling, and deployment into a single interactive product  
+
+It represents a progression from static analysis toward building real, usable data science tools.
+
 ## 🚀 Featured Projects
 # Generative AI Sustainability Index
 
