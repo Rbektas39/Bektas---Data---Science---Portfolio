@@ -37,3 +37,41 @@ From the root of this repository, run:
 
 ```bash
 streamlit run basic_streamlit_app/main.py
+
+
+## Machine Learning Application: Energy Efficiency Explorer
+
+As part of my data science portfolio, I developed an interactive machine learning application using Streamlit that predicts building energy demand based on structural characteristics.
+
+🔗 **Project Repository:**  
+https://github.com/Rbektas39/MLStreamlitApp  
+
+🔗 **Live Application:**  
+https://energy-efficiency-ml-explorer.streamlit.app/
+
+### Project Description
+
+This application allows users to explore how building design features influence energy consumption by training and comparing multiple regression models, including Linear Regression, Decision Trees, and Random Forests. Users can adjust model parameters, evaluate performance using metrics such as R², MAE, and RMSE, and visualize results through diagnostic plots.
+
+The project builds on my understanding of supervised machine learning by moving beyond static analysis to an interactive environment where model behavior can be explored dynamically.
+
+### Portfolio Contribution
+
+This project strengthens my portfolio by demonstrating:
+
+- The ability to build and deploy interactive data applications using Python and Streamlit  
+- Practical implementation of machine learning workflows, including model selection, evaluation, and tuning  
+- Experience deploying a live application using Streamlit Community Cloud  
+- The integration of data science concepts into user-friendly tools  
+
+Compared to earlier projects in my portfolio, which focused more on analysis and visualization, this application highlights my ability to take models to deployment and create tools that allow others to interact with and understand the results.
+
+### Connection to Previous Portfolio Updates
+
+This project builds directly on earlier portfolio work:
+
+- **Portfolio Update 1:** Established my GitHub portfolio and foundational projects  
+- **Portfolio Update 2:** Focused on data exploration, visualization, and basic modeling techniques  
+
+This machine learning application represents the next step by combining those skills into a complete, deployed product that demonstrates both technical and practical capabilities.
+
