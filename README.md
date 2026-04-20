@@ -2,7 +2,7 @@
 Code and projects for Introduction to Data Science
 ## Hi, I’m Robert 👋
 
-I’m an Economics student with a strong interest in data science, sustainability, and applied analytics. I enjoy using data to answer real-world questions, especially in areas like renewable energy, finance, and public policy.
+I’m an Economics student at the University of Notre Dame with a passion for strong interest in data science and sustainability. I enjoy using data to persuade and invoke change, especially in how we treat our beautiful natural world. 
 
 ---
 
@@ -10,7 +10,7 @@ I’m an Economics student with a strong interest in data science, sustainabilit
 - 📊 Economics major with hands-on experience in data analysis and modeling  
 - 🌱 Interested in sustainability, renewable energy, and impact-driven work  
 - 🧠 Comfortable translating technical analysis into clear, non-technical insights  
-- 📍 Currently based in the U.S., with international academic experience  
+- 📍 Currently based in the U.S., but grew up in the UK  
 
 ---
 
@@ -28,7 +28,7 @@ https://energy-efficiency-ml-explorer.streamlit.app/
 
 This application allows users to explore how building design features influence energy consumption by training and comparing multiple regression models, including Linear Regression, Decision Trees, and Random Forests. Users can adjust model parameters, evaluate performance using metrics such as R², MAE, and RMSE, and visualize results through diagnostic plots.
 
-The project builds on my understanding of supervised machine learning by moving beyond static analysis to an interactive environment where model behavior can be explored dynamically.
+The project builds on my understanding of supervised machine learning by giving the user an interactive environment where model behavior can be explored dynamically.
 
 ### Contribution to Portfolio
 
