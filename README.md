@@ -1,138 +1,118 @@
-# Bektas - Data - Science - Portfolio
-Code and projects for Introduction to Data Science
-## Hi, I’m Robert 👋
+# 📊 Bektas Data Science Portfolio
 
-I’m an Economics student at the University of Notre Dame with a passion for strong interest in data science and sustainability. I enjoy using data to persuade and invoke change, especially in how we treat our natural world. 
+Code and projects from my work in *Introduction to Data Science* and related coursework.
+
+---
+
+## 👋 Hi, I’m Robert
+
+I’m an Economics student at the University of Notre Dame with a strong interest in data science and sustainability. I’m particularly interested in using data not just to analyze problems, but to communicate ideas and drive real-world change, especially in areas like energy, climate, and public policy.
 
 ---
 
 ## 🔍 About Me
+
 - 📊 Economics major with hands-on experience in data analysis and modeling  
 - 🌱 Interested in sustainability, renewable energy, and impact-driven work  
-- 🧠 Comfortable translating technical analysis into clear, non-technical insights  
-- 📍 Currently based in the U.S., but grew up in the UK  
+- 🧠 Focused on making technical analysis clear and accessible  
+- 📍 Based in the U.S., originally from the UK  
 
 ---
+
 ## 🚀 Featured Projects
 
-## Machine Learning Application: Energy Efficiency Explorer
+### ⚡ Energy Efficiency Explorer (Machine Learning App)
+An interactive Streamlit application that predicts building energy demand based on structural characteristics.
 
-As part of my data science portfolio, I developed an interactive machine learning application using Streamlit that predicts building energy demand based on structural characteristics.
+- **Tools:** Python, scikit-learn, Streamlit  
+- **Live App:** https://energy-efficiency-ml-explorer.streamlit.app/  
+- **Repository:** https://github.com/Rbektas39/MLStreamlitApp  
 
-🔗 Project Repository:  
-https://github.com/Rbektas39/MLStreamlitApp  
+This project allows users to train and compare multiple regression models, including Linear Regression, Decision Trees, and Random Forests. Users can adjust parameters, evaluate performance using R², MAE, and RMSE, and visualize results through diagnostic plots.
 
-🔗 Live Application:  
-https://energy-efficiency-ml-explorer.streamlit.app/
+More than anything, this project represents a shift from static analysis to building interactive tools that others can use to explore data and model behavior.
 
-### Overview
+---
 
-This application allows users to explore how building design features influence energy consumption by training and comparing multiple regression models, including Linear Regression, Decision Trees, and Random Forests. Users can adjust model parameters, evaluate performance using metrics such as R², MAE, and RMSE, and visualize results through diagnostic plots.
-
-The project builds on my understanding of supervised machine learning by giving the user an interactive environment where model behavior can be explored dynamically.
-
-### Contribution to Portfolio
-
-This project demonstrates several key skills:
-
-- Building interactive data applications using Python and Streamlit  
-- Applying machine learning workflows including model selection, evaluation, and hyperparameter tuning  
-- Deploying a live application using Streamlit Community Cloud  
-- Designing user-friendly interfaces for exploring data and model results  
-
-Compared to earlier projects in my portfolio, which focused more on data analysis and visualization, this application highlights my ability to take models to deployment and create tools that others can interact with directly.
-
-### Connection to Previous Work
-
-This project builds on previous portfolio work:
-
-- Earlier projects focused on data exploration, visualization, and foundational modeling  
-- This application extends those skills into a full end-to-end workflow, combining analysis, modeling, and deployment into a single interactive product  
-
-It represents a progression from static analysis toward building real, usable data science tools.
-
-# Generative AI Sustainability Index
-
+### 🌱 Generative AI Sustainability Index
 **Course:** Generative AI  
-**Tools:** Python, LLM evaluation, prompt engineering  
+**Tools:** Python, prompt engineering, LLM evaluation  
 
-This project examines the environmental and sustainability implications of large language models. It proposes a framework for comparing different model types based on efficiency, scale, and sustainability considerations that are typically hidden from end users.
+This project explores the environmental impact of large language models and proposes a framework for comparing models based on efficiency and sustainability.
 
-The project compares frontier, reasoning-oriented, and smaller open-source models to highlight tradeoffs between performance and environmental cost.
+By comparing frontier models, reasoning-focused models, and smaller open-source alternatives, the project highlights the tradeoffs between performance and environmental cost that are often hidden from users.
 
-📄 **Project Presentation:**  
-[View Presentation](./Gen-AI-Final-Project-Presentation.pptx)
+- 📄 Presentation: *Add link here*
 
-# Economic Shocks and Civil Rebellion (Agent-Based Model)
+---
 
+### 🌍 Economic Shocks and Civil Rebellion (Agent-Based Model)
 **Course:** Simulating Politics and Global Affairs  
-**Tools:** NetLogo, agent-based modeling, BehaviorSpace  
+**Tools:** NetLogo, BehaviorSpace  
 
-This project extends Epstein’s (2002) civil violence model by introducing time-varying economic hardship through regular economic shocks. The model examines how shock magnitude and frequency influence rebellion intensity and volatility.
+This project builds on Epstein’s (2002) civil violence model by introducing time-varying economic shocks. It examines how the frequency and magnitude of shocks influence rebellion intensity.
 
-Using BehaviorSpace experiments, the project shows that economic instability, rather than static hardship alone, plays a key role in generating extreme rebellion events.
+The key insight is that instability itself—not just baseline hardship—plays a major role in generating extreme outcomes.
 
-📄 **Full Write-Up:**  
-[Read Final Paper](./Final-Writeup-Simulating-Politics-and-Global-Affairs.docx)
+- 📄 Full Paper: *Add link here*
 
-# 🐧 Penguin Explorer (Streamlit App)
+---
 
+### 🐧 Penguin Explorer (Streamlit App)
 **Course:** Introduction to Data Science  
+**Tools:** Python, pandas, Streamlit  
 
-**Tools:** Python, pandas, matplotlib  
+An interactive app built using the Palmer Penguins dataset to explore relationships between species, island, sex, and body mass.
 
-Interactive app built using the Palmer Penguins dataset to explore relationships between species, island, sex, and body mass.
+- **Live App:** https://bektas---data---science---portfolio-gd7lnuxmylcf6mqvzs9ds5.streamlit.app/  
+- **Repository:** https://github.com/Rbektas39/basic_streamlit_app  
 
-Features:
-Dataset display using pandas DataFrame
-Interactive filters (species, island, sex, body mass)
-Summary statistics for numerical variables
-Tools: Python, pandas, Streamlit
+Features include:
+- Interactive filtering (species, island, sex, body mass)  
+- Dataset exploration using pandas  
+- Summary statistics for numerical variables  
 
-🔗 Project Repository: https://github.com/Rbektas39/basic_streamlit_app
+---
 
-🔗 Live Application: https://bektas---data---science---portfolio-gd7lnuxmylcf6mqvzs9ds5.streamlit.app/
-
-# Tidy Data Transformation and Exploratory Analysis (Python)
-
+### 📊 Tidy Data Transformation & Analysis
 **Course:** Introduction to Data Science  
 **Tools:** Python, pandas, matplotlib  
 
-This project applies tidy data principles to transform a messy real-world dataset of 2008 Olympic medalists into a structured format suitable for analysis. The original dataset stored multiple variables (sport and gender) within column names, requiring reshaping from wide to long format.
+This project transforms a messy dataset of 2008 Olympic medalists into a clean, tidy format suitable for analysis.
 
-Using pandas functions such as `melt()`, string parsing methods, and pivot table aggregation, the project constructs a tidy dataset where each row represents a single medal observation. The cleaned data is then used to explore patterns in medal distributions across sports and gender through summary statistics and visualizations.
+Using functions like `melt()` and pivot tables, the data is reshaped so each row represents a single observation. The cleaned dataset is then used to explore patterns in medal distribution across sports and gender.
 
-This project demonstrates practical data wrangling skills, including restructuring datasets, handling missing observations, and performing exploratory data analysis — core competencies for applied data science work.
-
-📄 **Project Repository:**  
-https://github.com/Rbektas39/TidyData-Project
+- **Repository:** https://github.com/Rbektas39/TidyData-Project  
 
 ---
 
 ## 🛠️ Technical Skills
-**Languages & Tools:**  
+
+**Languages & Tools**
 - Python  
 - R  
 - Stata  
 - Power BI  
 
-**Core Skills:**  
-- Data cleaning and exploratory data analysis  
+**Core Skills**
+- Data cleaning and exploratory analysis  
 - Statistical modeling and forecasting  
 - Data visualization and dashboards  
-- Writing clear documentation and reproducible code  
+- Writing clear, reproducible code  
 
 ---
 
 ## 📎 What You’ll Find Here
-- Well-documented projects with readable README files  
-- Clean, organized code focused on clarity and reproducibility  
-- Projects that connect technical analysis to real-world questions  
+
+- Well-documented projects with clear structure  
+- Clean and readable code  
+- Work that connects technical analysis to real-world questions  
 
 ---
 
 ## 🤝 Let’s Connect
-- 💼 LinkedIn: www.linkedin.com/in/robert-bektas-372a7a253 
-- 📧 Email: rbektas@nd.edu 
 
-Thanks for stopping by!
+- 💼 LinkedIn: www.linkedin.com/in/robert-bektas-372a7a253  
+- 📧 Email: rbektas@nd.edu  
+
+Thanks for taking a look.
