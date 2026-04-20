@@ -13,6 +13,7 @@ I’m an Economics student at the University of Notre Dame with a passion for st
 - 📍 Currently based in the U.S., but grew up in the UK  
 
 ---
+## 🚀 Featured Projects
 
 ## Machine Learning Application: Energy Efficiency Explorer
 
@@ -50,7 +51,6 @@ This project builds on previous portfolio work:
 
 It represents a progression from static analysis toward building real, usable data science tools.
 
-## 🚀 Featured Projects
 # Generative AI Sustainability Index
 
 **Course:** Generative AI  
