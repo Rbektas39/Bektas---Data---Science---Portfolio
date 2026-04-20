@@ -54,7 +54,7 @@ This project builds on Epstein’s (2002) civil violence model by introducing ti
 
 The key insight is that instability itself—not just baseline hardship—plays a major role in generating extreme outcomes.
 
-- 📄 Full Paper: *Add link here*
+-  Repository: https://github.com/Rbektas39/-Economic-Shocks-and-Civil-Rebellion-Agent-Based-Model-
 
 ---
 
