@@ -42,7 +42,7 @@ This project explores the environmental impact of large language models and prop
 
 By comparing frontier models, reasoning-focused models, and smaller open-source alternatives, the project highlights the tradeoffs between performance and environmental cost that are often hidden from users.
 
-- 📄 Presentation: *Add link here*
+- 📄 Presentation: *insert link here*
 
 ---
 
