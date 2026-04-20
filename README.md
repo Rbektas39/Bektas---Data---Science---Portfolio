@@ -89,9 +89,9 @@ Interactive filters (species, island, sex, body mass)
 Summary statistics for numerical variables
 Tools: Python, pandas, Streamlit
 
-Run Locally:
+🔗 Project Repository: https://github.com/Rbektas39/basic_streamlit_app
 
-streamlit run basic_streamlit_app/main.py
+🔗 Live Application: https://bektas---data---science---portfolio-gd7lnuxmylcf6mqvzs9ds5.streamlit.app/
 
 # Tidy Data Transformation and Exploratory Analysis (Python)
 
