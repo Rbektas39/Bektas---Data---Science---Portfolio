@@ -2,7 +2,7 @@
 Code and projects for Introduction to Data Science
 ## Hi, I’m Robert 👋
 
-I’m an Economics student at the University of Notre Dame with a passion for strong interest in data science and sustainability. I enjoy using data to persuade and invoke change, especially in how we treat our beautiful natural world. 
+I’m an Economics student at the University of Notre Dame with a passion for strong interest in data science and sustainability. I enjoy using data to persuade and invoke change, especially in how we treat our natural world. 
 
 ---
 
@@ -74,6 +74,20 @@ Using BehaviorSpace experiments, the project shows that economic instability, ra
 
 📄 **Full Write-Up:**  
 [Read Final Paper](./Final-Writeup-Simulating-Politics-and-Global-Affairs.docx)
+
+# 🐧 Penguin Explorer (Streamlit App)
+**Course:** Introduction to Data Science  
+**Tools:** Python, pandas, matplotlib  
+Description: Interactive app built using the Palmer Penguins dataset to explore relationships between species, island, sex, and body mass.
+Features:
+Dataset display using pandas DataFrame
+Interactive filters (species, island, sex, body mass)
+Summary statistics for numerical variables
+Tools: Python, pandas, Streamlit
+
+Run Locally:
+
+streamlit run basic_streamlit_app/main.py
 
 # Tidy Data Transformation and Exploratory Analysis (Python)
 
