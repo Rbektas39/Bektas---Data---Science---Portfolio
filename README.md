@@ -76,9 +76,13 @@ Using BehaviorSpace experiments, the project shows that economic instability, ra
 [Read Final Paper](./Final-Writeup-Simulating-Politics-and-Global-Affairs.docx)
 
 # 🐧 Penguin Explorer (Streamlit App)
+
 **Course:** Introduction to Data Science  
+
 **Tools:** Python, pandas, matplotlib  
-Description: Interactive app built using the Palmer Penguins dataset to explore relationships between species, island, sex, and body mass.
+
+Interactive app built using the Palmer Penguins dataset to explore relationships between species, island, sex, and body mass.
+
 Features:
 Dataset display using pandas DataFrame
 Interactive filters (species, island, sex, body mass)
