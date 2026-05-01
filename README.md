@@ -20,7 +20,6 @@ I’m an Economics student at the University of Notre Dame with a strong interes
 **Course:** Introduction to Data Science  
 **Tools:** Python, pandas, scikit-learn, Streamlit, SciPy, matplotlib  
 **Live App:** https://bektas---data---science---portfolio-k3pmjwu6nte4tnfb8mywep.streamlit.app/  
-**Repository:** https://github.com/Rbektas39/Bektas---Data---Science---Portfolio/tree/main/MLUnsupervisedApp
 
 This interactive Streamlit app uses unsupervised machine learning to explore patterns in country-level development data. Rather than predicting a target variable, the app groups countries based on similarities across socioeconomic, health, demographic, and economic indicators.
 
