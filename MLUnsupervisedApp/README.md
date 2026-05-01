@@ -14,6 +14,26 @@ The live Streamlit app is available here:
 
 https://bektas---data---science---portfolio-k3pmjwu6nte4tnfb8mywep.streamlit.app/
 
+## App Screenshots
+
+### K-Means Clustering Visualization
+
+The app allows users to run K-Means clustering and visualize the resulting clusters in two dimensions using PCA. This helps users see how observations are grouped after clustering.
+
+![K-Means Clusters Visualized with PCA](images/kmeans_pca_clusters.png)
+
+### Hierarchical Clustering Dendrogram
+
+The hierarchical clustering section displays a dendrogram, which shows how observations are grouped together at different distance levels. Users can experiment with linkage methods to see how the clustering structure changes.
+
+![Hierarchical Clustering Dendrogram](images/hierarchical_dendrogram.png)
+
+### PCA Explained Variance
+
+The PCA section includes an explained variance chart, showing how much variation is captured by each principal component. This helps users understand how effectively the data can be reduced into fewer dimensions.
+
+![Explained Variance by Principal Component](images/pca_explained_variance.png)
+
 ## App Features
 
 Users can:
