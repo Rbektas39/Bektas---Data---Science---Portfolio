@@ -86,7 +86,7 @@ For example, a categorical variable such as:
 
 ```text
 Region: Europe, Africa, Asia
-
+```
 
 ## References and Resources Used
 
