@@ -82,6 +82,11 @@ Non-numeric columns are excluded from model training. However, one non-numeric c
 
 If users want categorical variables included in the analysis, they should encode those variables before uploading the dataset.
 
+For example, a categorical variable such as:
+
+```text
+Region: Europe, Africa, Asia
+
 ## References and Resources Used
 
 This project was built using documentation and examples from the following resources:
@@ -91,8 +96,3 @@ This project was built using documentation and examples from the following resou
 - [Pandas Documentation](https://pandas.pydata.org/docs/) — used for loading, cleaning, and preparing tabular datasets.
 - [Matplotlib Documentation](https://matplotlib.org/stable/index.html) — used for generating visualizations such as clustering plots and explained variance charts.
 - [SciPy Hierarchical Clustering Documentation](https://docs.scipy.org/doc/scipy/reference/cluster.hierarchy.html) — used as a reference for dendrograms and hierarchical clustering visualizations.
-
-For example, a categorical variable such as:
-
-```text
-Region: Europe, Africa, Asia
