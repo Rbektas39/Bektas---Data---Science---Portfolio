@@ -82,6 +82,16 @@ Non-numeric columns are excluded from model training. However, one non-numeric c
 
 If users want categorical variables included in the analysis, they should encode those variables before uploading the dataset.
 
+## References and Resources Used
+
+This project was built using documentation and examples from the following resources:
+
+- [Streamlit Documentation](https://docs.streamlit.io/) — used for building the interactive app interface, including file uploads, sidebar controls, and displaying charts.
+- [scikit-learn Documentation](https://scikit-learn.org/stable/) — used for implementing K-Means clustering, hierarchical clustering, PCA, preprocessing, and evaluation metrics.
+- [Pandas Documentation](https://pandas.pydata.org/docs/) — used for loading, cleaning, and preparing tabular datasets.
+- [Matplotlib Documentation](https://matplotlib.org/stable/index.html) — used for generating visualizations such as clustering plots and explained variance charts.
+- [SciPy Hierarchical Clustering Documentation](https://docs.scipy.org/doc/scipy/reference/cluster.hierarchy.html) — used as a reference for dendrograms and hierarchical clustering visualizations.
+
 For example, a categorical variable such as:
 
 ```text
