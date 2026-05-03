@@ -49,6 +49,7 @@ This project explores the environmental impact of large language models and prop
 By comparing frontier models, reasoning-focused models, and smaller open-source alternatives, the project highlights the tradeoffs between performance and environmental cost that are often hidden from users.
 
 **Repository:** https://github.com/Rbektas39/Evaluating-Prompting-Strategies-and-Token-Efficiency-in-Generative-AI-Models/tree/main
+**Presentation:** [View Project PDF](TokenEfficiencyProject.pdf)
 
 ## 🌍 Economic Shocks and Civil Rebellion (Agent-Based Model)
 
@@ -60,6 +61,7 @@ This project builds on Epstein’s (2002) civil violence model by introducing ti
 The key insight is that instability itself—not just baseline hardship—plays a major role in generating extreme outcomes.
 
 **Repository:** https://github.com/Rbektas39/-Economic-Shocks-and-Civil-Rebellion-Agent-Based-Model-
+**Writeup:** [View Project PDF](https://github.com/Rbektas39/-Economic-Shocks-and-Civil-Rebellion-Agent-Based-Model-/blob/main/Simulating%20Politics%20and%20Global%20Affairs.pdf)
 
 ## 🐧 Penguin Explorer (Streamlit App)
 
