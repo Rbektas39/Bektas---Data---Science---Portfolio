@@ -50,7 +50,7 @@ By comparing frontier models, reasoning-focused models, and smaller open-source 
 
 **Repository:** https://github.com/Rbektas39/Evaluating-Prompting-Strategies-and-Token-Efficiency-in-Generative-AI-Models/tree/main
 
-**Presentation:** [View Project PDF](TokenEfficiencyProject.pdf)
+**Presentation:** [View Project PDF](https://github.com/Rbektas39/Evaluating-Prompting-Strategies-and-Token-Efficiency-in-Generative-AI-Models/blob/main/TokenEfficiencyProject.pdf)
 
 ## 🌍 Economic Shocks and Civil Rebellion (Agent-Based Model)
 
