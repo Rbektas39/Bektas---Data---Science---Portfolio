@@ -2,11 +2,11 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from pathlib import Path
 
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans, AgglomerativeClustering
 from sklearn.decomposition import PCA
-
 from scipy.cluster.hierarchy import dendrogram, linkage
 
 
@@ -36,8 +36,16 @@ with st.expander("How this app works"):
 
 @st.cache_data
 def load_country_data():
-    return pd.read_csv("Country-data.csv")
+    """
+    Load the built-in country development dataset.
 
+    The file path is based on the location of this Python file so the app works
+    both locally and on Streamlit Cloud.
+    """
+    app_dir = Path(__file__).parent
+    data_path = app_dir / "Country-data.csv"
+
+    return pd.read_csv(data_path)
 
 def prepare_data(df):
     """
