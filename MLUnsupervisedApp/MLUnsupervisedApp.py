@@ -10,10 +10,6 @@ from sklearn.decomposition import PCA
 from scipy.cluster.hierarchy import dendrogram, linkage
 
 
-# -----------------------------
-# Page setup
-# -----------------------------
-
 st.set_page_config(
     page_title="Global Development Cluster Explorer",
     layout="wide"
@@ -38,31 +34,19 @@ with st.expander("How this app works"):
     """)
 
 
-# -----------------------------
-# Data loading and preprocessing
-# -----------------------------
-
 @st.cache_data
 def load_country_data():
-    """
-    Load the built-in country development dataset.
-
-    The CSV file should be located in the same folder as this Streamlit app.
-    Caching avoids reloading the dataset every time the app reruns.
-    """
     return pd.read_csv("Country-data.csv")
 
 
 def prepare_data(df):
     """
-    Prepare a dataset for unsupervised learning.
+    Prepares a dataset for unsupervised learning.
 
-    This function separates numeric columns from non-numeric columns.
-    Numeric columns are used for clustering and PCA. Non-numeric columns are
-    excluded from modeling, but they can still be used as observation labels.
-
-    Missing numeric values are filled using column means so that the models
-    can run without errors caused by missing data.
+    The function separates numeric columns from non-numeric columns.
+    Numeric columns are used for clustering and PCA.
+    Non-numeric columns are not used in modeling, but they can be used as labels.
+    Missing numeric values are filled using column means.
     """
     numeric_df = df.select_dtypes(include=np.number).copy()
     non_numeric_cols = [col for col in df.columns if col not in numeric_df.columns]
@@ -74,40 +58,21 @@ def prepare_data(df):
 
 
 def scale_data(numeric_df):
-    """
-    Standardize numeric features so each variable has mean 0 and standard deviation 1.
-
-    Standardization is important for clustering and PCA because variables with larger
-    scales, such as income or GDP, could otherwise dominate the results.
-    """
     scaler = StandardScaler()
     scaled_data = scaler.fit_transform(numeric_df)
-
     scaled_df = pd.DataFrame(
         scaled_data,
         columns=numeric_df.columns,
         index=numeric_df.index
     )
-
     return scaled_df
 
 
-# -----------------------------
-# Modeling helper functions
-# -----------------------------
-
 def run_pca(scaled_df, n_components=2):
-    """
-    Run Principal Component Analysis on the standardized dataset.
-
-    Returns the fitted PCA model and a dataframe containing the principal
-    component scores for each observation.
-    """
     pca = PCA(n_components=n_components)
     components = pca.fit_transform(scaled_df)
 
-    component_cols = [f"PC{i + 1}" for i in range(n_components)]
-
+    component_cols = [f"PC{i+1}" for i in range(n_components)]
     pca_df = pd.DataFrame(
         components,
         columns=component_cols,
@@ -117,51 +82,7 @@ def run_pca(scaled_df, n_components=2):
     return pca, pca_df
 
 
-def cluster_summary(original_numeric_df, labels):
-    """
-    Create summary tables for cluster interpretation.
-
-    The cluster profile table shows the average value of each selected variable
-    within each cluster. The cluster count table shows how many observations
-    belong to each cluster.
-    """
-    summary_df = original_numeric_df.copy()
-    summary_df["Cluster"] = labels
-
-    cluster_profiles = summary_df.groupby("Cluster").mean().round(2)
-    cluster_counts = summary_df["Cluster"].value_counts().sort_index()
-
-    return cluster_profiles, cluster_counts
-
-
-def pca_loadings_table(pca, feature_names):
-    """
-    Create a PCA loadings table.
-
-    Loadings show how strongly each original variable contributes to each
-    principal component. Larger positive or negative values indicate that a
-    feature is more important for that component.
-    """
-    loadings = pd.DataFrame(
-        pca.components_.T,
-        columns=[f"PC{i + 1}" for i in range(pca.n_components_)],
-        index=feature_names
-    )
-
-    return loadings.round(3)
-
-
-# -----------------------------
-# Plotting helper functions
-# -----------------------------
-
 def plot_pca_clusters(pca_df, labels, title, label_series=None):
-    """
-    Plot observations in two-dimensional PCA space and color them by cluster label.
-
-    Optional observation labels can be added when the user selects a non-numeric
-    label column, such as country name.
-    """
     fig, ax = plt.subplots(figsize=(8, 5))
 
     scatter = ax.scatter(
@@ -195,18 +116,13 @@ def plot_pca_clusters(pca_df, labels, title, label_series=None):
 
 
 def plot_explained_variance(pca):
-    """
-    Create a bar chart showing the explained variance ratio for each principal component.
-    """
     explained_variance = pca.explained_variance_ratio_
 
     fig, ax = plt.subplots(figsize=(8, 4))
-
     ax.bar(
-        [f"PC{i + 1}" for i in range(len(explained_variance))],
+        [f"PC{i+1}" for i in range(len(explained_variance))],
         explained_variance
     )
-
     ax.set_ylabel("Explained Variance Ratio")
     ax.set_title("Explained Variance by Principal Component")
 
@@ -214,23 +130,15 @@ def plot_explained_variance(pca):
 
 
 def plot_dendrogram(scaled_df, linkage_method):
-    """
-    Create a truncated dendrogram for hierarchical clustering.
-
-    The dendrogram shows how observations are merged into larger groups.
-    Truncation keeps the plot readable when the dataset contains many observations.
-    """
     linked = linkage(scaled_df, method=linkage_method)
 
     fig, ax = plt.subplots(figsize=(10, 5))
-
     dendrogram(
         linked,
         ax=ax,
         truncate_mode="level",
         p=5
     )
-
     ax.set_title("Hierarchical Clustering Dendrogram")
     ax.set_xlabel("Observations")
     ax.set_ylabel("Distance")
@@ -238,9 +146,25 @@ def plot_dendrogram(scaled_df, linkage_method):
     st.pyplot(fig)
 
 
-# -----------------------------
-# Sidebar controls and data input
-# -----------------------------
+def cluster_summary(original_numeric_df, labels):
+    summary_df = original_numeric_df.copy()
+    summary_df["Cluster"] = labels
+
+    cluster_profiles = summary_df.groupby("Cluster").mean().round(2)
+    cluster_counts = summary_df["Cluster"].value_counts().sort_index()
+
+    return cluster_profiles, cluster_counts
+
+
+def pca_loadings_table(pca, feature_names):
+    loadings = pd.DataFrame(
+        pca.components_.T,
+        columns=[f"PC{i+1}" for i in range(pca.n_components_)],
+        index=feature_names
+    )
+
+    return loadings.round(3)
+
 
 st.sidebar.header("App Controls")
 
@@ -269,10 +193,6 @@ else:
         st.stop()
 
 
-# -----------------------------
-# Dataset preview and preprocessing
-# -----------------------------
-
 st.subheader("Dataset Preview")
 st.dataframe(df.head())
 
@@ -288,10 +208,6 @@ if len(numeric_df.columns) < 2:
     st.error("The dataset must contain at least two numeric columns for clustering and PCA.")
     st.stop()
 
-
-# -----------------------------
-# Feature selection and labels
-# -----------------------------
 
 st.sidebar.subheader("Feature Selection")
 
@@ -317,14 +233,9 @@ if len(non_numeric_cols) > 0:
     )
 
 label_series = None
-
 if label_column != "None" and label_column is not None:
     label_series = df[label_column]
 
-
-# -----------------------------
-# Preprocessing summary
-# -----------------------------
 
 st.subheader("Preprocessing Summary")
 
@@ -342,21 +253,12 @@ st.write(
 
 scaled_df = scale_data(model_numeric_df)
 
-
-# -----------------------------
-# Model tabs
-# -----------------------------
-
 tabs = st.tabs([
     "K-means Clustering",
     "Hierarchical Clustering",
     "PCA"
 ])
 
-
-# -----------------------------
-# K-means clustering tab
-# -----------------------------
 
 with tabs[0]:
     st.header("K-means Clustering")
@@ -399,7 +301,6 @@ with tabs[0]:
 
     kmeans_labels = kmeans.fit_predict(scaled_df)
 
-    # PCA is used here only for two-dimensional visualization of clusters.
     pca_2, pca_2_df = run_pca(scaled_df, n_components=2)
 
     st.subheader("K-means Cluster Visualization")
@@ -447,10 +348,6 @@ with tabs[0]:
         st.dataframe(clustered_df)
 
 
-# -----------------------------
-# Hierarchical clustering tab
-# -----------------------------
-
 with tabs[1]:
     st.header("Hierarchical Clustering")
 
@@ -489,7 +386,6 @@ with tabs[1]:
 
     hierarchical_labels = hierarchical.fit_predict(scaled_df)
 
-    # PCA is used here only to create a readable two-dimensional cluster plot.
     pca_2_h, pca_2_h_df = run_pca(scaled_df, n_components=2)
 
     st.subheader("Dendrogram")
@@ -545,10 +441,6 @@ with tabs[1]:
         st.dataframe(h_clustered_df)
 
 
-# -----------------------------
-# PCA tab
-# -----------------------------
-
 with tabs[2]:
     st.header("Principal Component Analysis")
 
@@ -583,7 +475,7 @@ with tabs[2]:
     plot_explained_variance(pca_model)
 
     explained_variance_df = pd.DataFrame({
-        "Principal Component": [f"PC{i + 1}" for i in range(n_components)],
+        "Principal Component": [f"PC{i+1}" for i in range(n_components)],
         "Explained Variance Ratio": pca_model.explained_variance_ratio_,
         "Cumulative Explained Variance": np.cumsum(pca_model.explained_variance_ratio_)
     })
@@ -593,13 +485,11 @@ with tabs[2]:
     st.subheader("PCA Scatterplot")
 
     fig, ax = plt.subplots(figsize=(8, 5))
-
     ax.scatter(
         pca_df["PC1"],
         pca_df["PC2"],
         alpha=0.75
     )
-
     ax.set_xlabel("Principal Component 1")
     ax.set_ylabel("Principal Component 2")
     ax.set_title("PCA Projection")
