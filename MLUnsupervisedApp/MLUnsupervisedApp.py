@@ -66,6 +66,9 @@ def prepare_data(df):
 
 
 def scale_data(numeric_df):
+    """
+    Standardize numeric features before clustering and PCA.
+    """
     scaler = StandardScaler()
     scaled_data = scaler.fit_transform(numeric_df)
     scaled_df = pd.DataFrame(
@@ -77,6 +80,9 @@ def scale_data(numeric_df):
 
 
 def run_pca(scaled_df, n_components=2):
+    """
+    Run PCA and return both the fitted PCA model and transformed component scores.
+    """
     pca = PCA(n_components=n_components)
     components = pca.fit_transform(scaled_df)
 
@@ -155,6 +161,9 @@ def plot_dendrogram(scaled_df, linkage_method):
 
 
 def cluster_summary(original_numeric_df, labels):
+    """
+    Return cluster counts and average feature values by cluster.
+    """
     summary_df = original_numeric_df.copy()
     summary_df["Cluster"] = labels
 
